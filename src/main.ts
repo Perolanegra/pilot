@@ -7,10 +7,8 @@ async function bootstrap() {
   Promise.all([app])
 }
 
-// (async () => {
-//   console.time('blocking');
-//   await bootstrap();
-//   console.timeEnd('blocking');
-// })();
+(async () => {
+  await bootstrap();
+})();
 
 
